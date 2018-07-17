@@ -18,7 +18,8 @@ import java.util.*;
  */
 public class MysqlGenerator {
 //    private static String packageName="cn.gzticc.bgmanagertemplate.gen";    //文件路径
-    private static String packageName="cn.gzticc.bgmanagertemplate.business";    //文件路径
+//    private static String packageName="cn.gzticc.bgmanagertemplate.business";    //文件路径
+    private static String packageName="cn.gzticc.bgmanagertemplate.framework";    //文件路径
     private static String authorName="zcp";     //作者
     private static String table="tb_sys_admin";                  //table名字
     private static String prefix="tb_";                     //table前缀

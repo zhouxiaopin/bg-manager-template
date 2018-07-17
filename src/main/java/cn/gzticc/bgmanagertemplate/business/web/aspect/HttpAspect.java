@@ -1,6 +1,6 @@
 package cn.gzticc.bgmanagertemplate.business.web.aspect;
 
-import cn.gzticc.bgmanagertemplate.business.pojo.SysAdmin;
+import cn.gzticc.bgmanagertemplate.framework.pojo.SysAdmin;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.slf4j.Logger;
