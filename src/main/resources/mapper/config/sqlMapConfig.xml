@@ -11,7 +11,7 @@
         <!--使用支持别名 默认：true-->
         <setting name="useColumnLabel" value="true"/>
         <!--开启驼峰命名转换:Table{create_time} -> Entity{createTime}-->
-        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <setting name="mapUnderscoreToCamelCase" value="false"/>
     </settings>
 
     <!-- 配置别名 -->

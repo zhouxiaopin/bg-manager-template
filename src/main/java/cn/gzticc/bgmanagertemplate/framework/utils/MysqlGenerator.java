@@ -126,7 +126,7 @@ public class MysqlGenerator {
                     // 自定义输出文件目录
                     @Override
                     public String outputFile(TableInfo tableInfo) {
-                        return path+"/resources/dao/" + tableInfo.getEntityName() + "Mapper.xml";
+                        return path+"/resources/mapper/" + tableInfo.getEntityName() + "Mapper.xml";
                     }
                 }))
         ).setTemplate(

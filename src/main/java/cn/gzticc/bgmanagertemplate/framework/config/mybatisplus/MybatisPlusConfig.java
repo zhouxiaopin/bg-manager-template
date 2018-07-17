@@ -5,7 +5,6 @@ import com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceBuilder;
 import com.baomidou.mybatisplus.plugins.PaginationInterceptor;
 import com.baomidou.mybatisplus.plugins.PerformanceInterceptor;
 import org.mybatis.spring.annotation.MapperScan;
-import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -52,7 +51,7 @@ public class MybatisPlusConfig {
      * @Date : Create in 2018/1/3 17:38
      */
     @Bean
-    @ConfigurationProperties("spring.datasource.druid." )
+//    @ConfigurationProperties("spring.datasource.druid" )
     public DataSource dataSource() {
         return DruidDataSourceBuilder
                 .create()

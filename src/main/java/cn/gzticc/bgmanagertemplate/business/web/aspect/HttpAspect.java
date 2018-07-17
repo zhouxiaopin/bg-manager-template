@@ -1,5 +1,6 @@
 package cn.gzticc.bgmanagertemplate.business.web.aspect;
 
+import cn.gzticc.bgmanagertemplate.business.pojo.SysAdmin;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.slf4j.Logger;
@@ -45,11 +46,11 @@ public class HttpAspect {
         //参数
         logger.info("args={}", joinPoint.getArgs());
 
-//        AdminCustom adminInfo = (AdminCustom) session.getAttribute("adminInfo");
-//        if(null != adminInfo) {
-//            //操作人
-//            logger.info("currAdminAccount={}", adminInfo.getAccount());
-//        }
+        SysAdmin adminInfo = (SysAdmin) session.getAttribute("adminInfo");
+        if(null != adminInfo) {
+            //操作人
+            logger.info("currAdminUserName={}", adminInfo.getUserName());
+        }
     }
 
     @After("log()")
