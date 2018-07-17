@@ -148,4 +148,5 @@ public class MysqlGenerator {
         // 打印注入设置，这里演示模板里面怎么获取注入内容【可无】
         System.err.println(mpg.getCfg().getMap().get("abc"));
     }
+
 }
