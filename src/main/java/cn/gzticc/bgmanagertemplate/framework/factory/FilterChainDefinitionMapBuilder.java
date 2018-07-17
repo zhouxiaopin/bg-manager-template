@@ -10,9 +10,9 @@ public class FilterChainDefinitionMapBuilder {
         LinkedHashMap<String, String> map = new LinkedHashMap<>();
 
         map.put("/static/**", "anon");
-        map.put("/admin/login", "anon");
+        map.put("/sysAdmin/login", "anon");
 //        map.put("/shiro/login", "anon");
-        map.put("/admin/logout", "logout");
+        map.put("/sysAdmin/logout", "logout");
 //        map.put("/busInfo.action", "authc,roles[user]");
 //        map.put("/admin.jsp", "authc,roles[admin]");
 //        map.put("/list.jsp", "user");

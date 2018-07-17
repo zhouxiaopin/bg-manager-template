@@ -113,9 +113,9 @@ public class ShiroConfiguration {
 
 
         shiroFilterFactoryBean.setSecurityManager(securityManager);
-        shiroFilterFactoryBean.setLoginUrl("/admin/initLogin");
-        shiroFilterFactoryBean.setSuccessUrl("/admin/index");
-        shiroFilterFactoryBean.setUnauthorizedUrl("/admin/initLogin");
+        shiroFilterFactoryBean.setLoginUrl("/sysAdmin/initLogin");
+        shiroFilterFactoryBean.setSuccessUrl("/sysAdmin/index");
+        shiroFilterFactoryBean.setUnauthorizedUrl("/sysAdmin/initLogin");
 
         FilterChainDefinitionMapBuilder filterChainDefinitionMapBuilder = new FilterChainDefinitionMapBuilder();
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMapBuilder.buildFilterChainDefinitionMap());
