@@ -26,6 +26,11 @@ import javax.servlet.http.HttpSession;
 @RequestMapping("/sysAdmin")
 public class SysAdminController {
 
+    protected static final String QUERY_OPRT = "query";
+    protected static final String ADD_OPRT = "add";
+    protected static final String UPDATE_OPRT = "update";
+    protected static final String QUERYDETAIL_OPRT = "queryDetail";
+
     @GetMapping(value = "/initLogin")
     public ModelAndView initLogin(ModelAndView mv){
         mv.addObject("oprt","login");
@@ -78,6 +83,13 @@ public class SysAdminController {
     @GetMapping(value = "/index")
     public ModelAndView index(ModelAndView mv){
         mv.setViewName("index");
+        return mv;
+    }
+
+    @GetMapping(value = "/initQuery")
+    public ModelAndView initQuery(ModelAndView mv) throws Exception{
+        mv.addObject("oprt",QUERY_OPRT);
+        mv.setViewName("sysadmin/list");
         return mv;
     }
 }
